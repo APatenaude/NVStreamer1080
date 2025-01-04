@@ -597,7 +597,7 @@ namespace NVStreamer1080 {
             }
         }
 
-        Regex RxSunshineDetectState = new Regex("(CLIENT CONNECTED|CLIENT DISCONNECTED)", RegexOptions.Compiled);
+        Regex RxSunshineDetectState = new Regex("(CLIENT CONNECTED|CLIENT DISCONNECTED|Process terminated)", RegexOptions.Compiled);
         private void OnSunshineStdout(object sender, DataReceivedEventArgs e) {
             if (String.IsNullOrEmpty(e.Data))
                 return;
